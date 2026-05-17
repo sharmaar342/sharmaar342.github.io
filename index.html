@@ -8,18 +8,55 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
+    <header class="wrap">
       <h1>Arvind Sharma</h1>
+      <p class="subtitle">Assistant Professor of the Practice in Applied Economics</p>
       <p>
-        Builder, learner, and problem solver.
-      </p>
-      <p>
-        Welcome to my personal website.
+        Welcome to my website. I currently teach in the MS Applied Economics (MSAE) and
+        MS Applied Analytics (MSAA) programs at Woods College of Advancing Studies,
+        Boston College.
       </p>
       <nav>
-        <a href="mailto:hello@arvindsharma.info">Email</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#travel">Travel</a>
         <a href="https://github.com/sharmaar342" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
+    </header>
+
+    <main class="wrap">
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>Assistant Professor of the Practice, Applied Economics — Boston College</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>Ph.D. in Applied Economics, Northeastern University (2022)</li>
+          <li>M.S. in Finance, Boston College (2025*)</li>
+          <li>M.S. in Applied Economics, Boston College (2016)</li>
+          <li>Bachelor’s in Economics and Finance, University of Hong Kong (2015)</li>
+          <li>Exchange Program, Telecom Ecole de Management, France (Fall 2014)</li>
+        </ul>
+      </section>
+
+      <section id="travel">
+        <h2>Traveled so far...</h2>
+        <p><strong>Asia:</strong> Thailand, Macau, Singapore, Nepal, Maldives, Turkey, UAE, Tibet, Hong Kong (China), India</p>
+        <p><strong>Europe:</strong> Germany, Netherlands, Belgium, Switzerland, Spain, Hungary, Czech Republic, Austria, Italy, Finland, France</p>
+        <p><strong>North America:</strong> Canada, Mexico, USA</p>
+      </section>
     </main>
+
+    <footer class="wrap muted">
+      <p>© <span id="year"></span> Arvind Sharma</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
